@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+
+body {
+  background: linear-gradient(to top, rgba(83, 69, 69, 0.872) 50%,  rgba(149, 133, 133, 0.6) 100%);
+  height: 99vh;
+}
+p{
+  margin: 0
+}
+
+.App {
+ outline: 1px solid blue;
+ max-width: 90vw;
+ min-height: 75vh;
+ margin: 0 auto;
+ margin-top: .5rem;
+
+}
+
+span {
+  display: block;
+  background: linear-gradient(to left, rgb(112, 43, 182)20%,rgb(15, 235, 15)80%);
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.chat{
+  width: 98%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  height: 45rem;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+}
+.chat .them:first-child{
+  margin-top: .5rem;
+}
+.chat .them {
+  max-width: 75%;
+  margin-right: 20%;
+  margin-left: 1rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-color: whitesmoke;
+}
+.chat .them:last-child{
+  margin-bottom: .5rem;
+}
+
+.chat .me {
+  max-width: 75%;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-left: 20%; 
+  margin-bottom: 1rem;
+  text-align: end;
+  padding-right: .5rem;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+
+  
+}
+
+.enviar_texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input {
+  background-color: transparent;
+  height: 5rem;
+  width: 80%;
+  margin: 0 0 1rem 1rem;     
+}
+.input input {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(112, 43, 182);
+  opacity: .5;
+  border: none;
+  font-size: 2.4rem;
+  border-radius: 1rem;
+}
+.input input:focus{
+  outline: none;
+  opacity: 1;
+}
+
+.button {
+  height: 5rem;
+  width: 20%;
+  margin: 0 1rem 1rem 0;
+}
+
+.button button {
+background-color: rgb(15, 235, 15);
+text-transform: uppercase;
+font-size: 1.3rem;
+font-weight: bold;
+text-align: center;
+border: 1px solid transparent;
+border-radius: 1rem;
+width: 100%;
+height: 100%;
+opacity: .5;
+}
+.button button:hover{
+  transform: scale(1.05);
+  opacity: 1;
+  border-color: wheat;
+}
